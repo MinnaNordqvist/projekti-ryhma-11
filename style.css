@@ -39,50 +39,55 @@ nav {
     box-shadow: 0px 0px 8px 0px #000000;
 }
 
+/*Media queries*/
+@media screen and (min-width: 1024px) {
+/*Tämä on pc:lle*/
+}    
 
-@media (max-width: 700px) {
-  .row, .nav {   
-    flex-direction: column;
-  }
-}
-.p {
-	padding: 20px;
-	color: black;
-}
 
-@media only screen and (max-width: 600px) {
-	.p {background: red;}
-  }
-  @media only screen and (min-width: 600px) {
-	.p {background: yellow;}
-  }
-  @media only screen and (min-width: 768px) {
-	.p {background: green;}
-  } 
 
-header {
-	background:#33ccff;
-	height: 75px;
-	
-}
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: hidden;
-	background-color: #ff0000;
-}
+@media screen and (min-width: 400px) {
+    /*Tämä on tabletille*/
+    header {
+        background:#33ccff;
+        height: 75px;
+        
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: hidden;
+        background-color: #ff0000;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: #000;
+        padding: 30px 60px;
+        text-decoration: none;
+    }   
+    .row, .nav {   
+        flex-direction: column;
+    }
+    
+    .p {
+        padding: 20px;
+        color: black;
+    }            
+}  
 
-li {
-	float: left;
-}
+@media screen and (max-width: 399px) {
+    /*Tämä on kännykälle*/    
+}    
 
-li a {
-	display: block;
-	color: #000;
-	padding: 30px 60px;
-	text-decoration: none;
-}               
+
+
+
 
 /* Change the link color on hover */
 li a:hover {
