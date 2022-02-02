@@ -46,6 +46,9 @@ nav {
 .container li a:hover {
 	color: rgb(241, 211, 171);
 }
+.container .icon {
+	display: none;
+  }
 .aktiivinen {
 	color: rgb(241, 211, 171);
 }
@@ -136,7 +139,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
 	background: #251808;
 	justify-content: flex-end;
 	align-items: flex-end;
-	min-height: 50vh;
+	min-height: 5vh;
   }
   
   .footer {
@@ -198,7 +201,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
   }
-  
+  /*
   .wave {
 	position: absolute;
 	top: -100px;
@@ -236,7 +239,8 @@ font-family: 'Ubuntu Condensed', sans-serif;
 	bottom: 20px;
 	animation: animate 3s linear infinite;
   }
-  
+  */
+  /*
   @keyframes animateWaves {
 	0% {
 	  background-position-x: 1000px;
@@ -254,4 +258,66 @@ font-family: 'Ubuntu Condensed', sans-serif;
 	  background-positon-x: 0px;
 	}
   }
-  
+  */
+  @media only screen and (max-width: 426px) {
+	/* For mobile phones: */
+	* {
+	  width: 100%;
+	  margin: auto;
+	}
+	.container {
+		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: row;
+		margin-left: -260px;
+	}
+	.container li a {
+		font-size: 15px;
+		text-align: left;
+		margin-right: 15%;
+	}
+	#jumbo h1  {
+		font-size:30px;
+	}
+	#jumbo h4 {
+		font-size: 20px;
+	}
+	#pavut {
+		display: none;
+	}
+	.artikkeli {
+		margin-top: 5%;
+		margin-left: 0;
+	}
+	.artikkeli h2 {
+		text-align: center;
+		font-size: 25px;
+	}
+	.artikkeli p {
+		max-width: 300px;
+		text-align: center;
+	}
+	.main-etusivu {
+display: flex;
+flex-direction: column;
+	}
+	.artikkeli a {
+		text-align: center;
+		width: auto;
+		margin-left: 38%;
+	}
+	hr {
+		display: none;
+	}
+	.oikea {
+		margin-left: auto;
+	}
+	.menu {
+		width: auto;
+		display: none;
+	}
+	.body p {
+		width: auto;
+	}
+}
