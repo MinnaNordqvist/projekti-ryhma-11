@@ -3,11 +3,14 @@
 
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KNBXFPG');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KNBXFPG');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -26,24 +29,26 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNBXFPG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNBXFPG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+
     <header>
         <!--Navigointi (Muista Lisätä Fontawesome Nuoli aktiiviselle)-->
 
         <nav>
-            <ul class="container">
-                <li><a href="index.html" style="color: rgb(241, 211, 171);">Etusivu</a></li>
+            <ul id="container">
+                <li><a href="index.html" class="hoveri">Etusivu</a></li>
                 <li><a href="menu/menu.html" class="hoveri">Menu</a></li>
                 <li><a href="meista/meista.html" class="hoveri">Meistä</a></li>
                 <li><a href="yhteystiedot/yhteystiedot.html" class="hoveri">Ota yhteyttä</a></li>
-                <li><a href="index.html">Suomeksi</a></li>
-                <li><a href="home.html">English</a></li>
-                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-                    <i class="fa fa-bars"></i>-->
+                <li><a href="index.html"><img src="images/fi.svg" alt="Finnish Flag" id="suomi"></a></li>
+                <li><a href="home.html"><img src="images/gb.svg" alt="The great brittain Flag" id="englanti"></a></li>
             </ul>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <div id="jumbo">
             <h1>Koko Suomen Parhaat Kahvit</h1>
@@ -70,7 +75,7 @@
 
         <!--oikea-->
         <div class="oikea">
-            
+
 
             <hr class="viivatoinen">
             <h3 id="ajankohtaista">Ajankohtaista</h3>
@@ -118,6 +123,17 @@
             </ul>
             <p>&copy;2022 Kuppila 11 | All Rights Reserved</p>
         </footer>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("container");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+            
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </div>
