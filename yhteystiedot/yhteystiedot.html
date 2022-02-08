@@ -48,12 +48,27 @@
     <!--Main Etusivu-->
     <div class="main-etusivu">
         <!--vasen-->
+       
         <article class="artikkeli">
             <h2>Yhteystiedot</h2>
             <hr class="viiva"><br>
             <p>info@kuppila11.fi<br>040 1234 123<br>Joukahaisenkatu 7, 20520 Turku
                 <br>
             </p>
+            <br>
+            <form method="GET">
+                <ul>
+                    <li><label for="Nimi">Nimesi:</label><br>
+                    <input type="text" name="Sendername" id="sender"></li>
+                    <li><label for="aihe">Aihe:</label><br>
+                    <input type="text" name="Aihe" id="aihe"></li>
+                    <li><label for="freetext">Viesti:</label><br>
+                    <textarea name="viesti" rows="5" cols="50" id="freetext"> </textarea></li>
+                    <li><label for="email">Sähköpostiosoitteesi:</label><br>
+                    <input type="email" name="e-mail" id="email"></li>
+                </ul>   
+                <p><input type="submit"> <input type="reset"></p>
+            </form>    
         </article>
 
         <!--oikea-->
