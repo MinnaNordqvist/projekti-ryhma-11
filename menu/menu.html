@@ -16,9 +16,8 @@
     <title>Menu | Kuppila 11</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora&family=Oleo+Script&family=Ubuntu+Condensed&family=Yellowtail&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Oleo+Script&family=Ubuntu+Condensed&family=Yellowtail&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -42,6 +41,10 @@
                 <li><a href=""><img src="../images/fi.svg" alt="Suomenkielinen sivu" id="suomi"></a></li>
                 <li><a href=""><img src="../images/gb.svg" alt="Read the page in English" id="englanti"></a></li>
             </ul>
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <div id="jumbo">
             <h1>Meidän Menumme</h1>
@@ -138,6 +141,16 @@
             </ul>
             <p>&copy;2022 Kuppila 11 | All Rights Reserved</p>
         </footer>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("container");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </div>
