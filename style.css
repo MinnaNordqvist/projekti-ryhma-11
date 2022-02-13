@@ -77,7 +77,7 @@ nav {
 }
 .main-etusivu {
 	display: flex;
-	margin-left: 2%;
+	
 	font-family: 'Lora', serif;
 }
 .button:link, .button:visited {
@@ -335,6 +335,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
 	.main-etusivu {
 		display: flex;
 		flex-direction: column;
+		
 	}
 	.artikkeli a {
 		text-align: center;

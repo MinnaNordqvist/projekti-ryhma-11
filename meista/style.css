@@ -65,7 +65,7 @@ nav {
 }
 .main-etusivu {
 	display: flex;
-	margin-left: 2%;
+	
 	font-family: 'Lora', serif;
 }
 .button:link, .button:visited {
