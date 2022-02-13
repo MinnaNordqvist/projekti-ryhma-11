@@ -30,7 +30,7 @@ p {
 	font-size: 1.4rem;
 }
 nav {
-	margin-left: 64%;
+	margin-left: 40%;
 }
 #container {
 	display: flex;
@@ -272,18 +272,19 @@ font-family: 'Ubuntu Condensed', sans-serif;
 	  margin: auto;
 	}
 	.nav {
-			max-width: 480px;
-			margin: auto;
-			background-color: #555;
-			height: 500px;
-			color: white;
-			border-radius: 10px;
+		max-width: 480px;
+		margin: auto;
+		background-color: #555;
+		height: 500px;
+		color: white;
+		border-radius: 10px;
 	}
 	#container {
 		overflow: hidden;
 		background-color: #333;
 		position: relative;
 		display: none;
+		
 	}
 	#container li a {
 		color: white;
