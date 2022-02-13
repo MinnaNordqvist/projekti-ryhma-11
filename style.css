@@ -14,7 +14,7 @@ header {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	background-color: rgba(179, 133, 81, 0.56);
 
 }
@@ -333,8 +333,8 @@ font-family: 'Ubuntu Condensed', sans-serif;
 		text-align: center;
 	}
 	.main-etusivu {
-display: flex;
-flex-direction: column;
+		display: flex;
+		flex-direction: column;
 	}
 	.artikkeli a {
 		text-align: center;
