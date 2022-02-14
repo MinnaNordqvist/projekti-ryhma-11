@@ -327,6 +327,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
 	.artikkeli {
 		margin-top: 5%;
 		margin-left: 0;
+		margin-right: 0;
 	}
 	.artikkeli h2 {
 		text-align: center;

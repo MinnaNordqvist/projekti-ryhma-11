@@ -28,7 +28,7 @@ margin-right: 50%;
 font-family: 'Ubuntu Condensed', sans-serif;
 }
 .artikkeli p {
-	font-family: 'Lora', serif;
+	
 	font-size: 30px;
 }
 .oikea {
@@ -156,6 +156,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
 	.artikkeli h2 {
 		text-align: center;
 		font-size: 25px;
+		margin-right: 0;
 	}
 	.artikkeli p {
 		max-width: 300px;
@@ -183,5 +184,8 @@ font-family: 'Ubuntu Condensed', sans-serif;
 	}
 	.body p {
 		width: auto;
+	}
+	.lomake {
+		max-width: 90%;
 	}
 }
